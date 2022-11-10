@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav"
+    "leftside main main rightside"
+     ;
+
+}
+nav{
+    grid-area: nav;
+    height: 10vh;
+    background-color: goldenrod;
+    text-align: center;
+}
+.leftside{
+    grid-area: leftside;
+    background-color: gray;
+    height: 100vh;
+}
+main {
+    grid-area: main;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+.rightside{
+    grid-area: rightside;
+    height: 100vh;
+    background-color:gray;
+}
+img{
+    height: 250px;
+    width: 450px;
+}
